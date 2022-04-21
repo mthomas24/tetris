@@ -37,12 +37,26 @@ export class Piece {
     this.grid = PIECES[type];
     this.rotation = 0; // 1: 90deg clockwise
     this.board = board;
+    // this._hardDropYPos = null;
     
     // Positive y is up
     this.pos = new Vec2(
       Math.floor(BOARD_WIDTH / 2 - this.grid[0].length / 2),
       BOARD_HEIGHT + this.grid.length - 1
     );
+  }
+
+  getHardDropYPos() {
+    let y = this.pos.y;
+    while (y >= 0) {
+      if (isIntersecting(this.board, this.grid, new Vec2(this.pos.x, y))) {
+        y++;
+        break;
+      }
+      y--;
+    }
+    // console.log(y);
+    return y;
   }
   
   /**

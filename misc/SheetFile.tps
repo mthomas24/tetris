@@ -136,7 +136,7 @@
             <key>data</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>../assets/tiledata.json</filename>
+                <filename>../assets/tiles.json</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -185,16 +185,17 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">../../../../Users/tomst/Downloads/thomastetris_indiv/thomastetris_indiv/black1.png</key>
-            <key type="filename">../../../../Users/tomst/Downloads/thomastetris_indiv/thomastetris_indiv/black2.png</key>
-            <key type="filename">../../../../Users/tomst/Downloads/thomastetris_indiv/thomastetris_indiv/black3.png</key>
-            <key type="filename">../../../../Users/tomst/Downloads/thomastetris_indiv/thomastetris_indiv/cyan.png</key>
-            <key type="filename">../../../../Users/tomst/Downloads/thomastetris_indiv/thomastetris_indiv/green.png</key>
-            <key type="filename">../../../../Users/tomst/Downloads/thomastetris_indiv/thomastetris_indiv/orange.png</key>
-            <key type="filename">../../../../Users/tomst/Downloads/thomastetris_indiv/thomastetris_indiv/pink.png</key>
-            <key type="filename">../../../../Users/tomst/Downloads/thomastetris_indiv/thomastetris_indiv/purple.png</key>
-            <key type="filename">../../../../Users/tomst/Downloads/thomastetris_indiv/thomastetris_indiv/red.png</key>
-            <key type="filename">../../../../Users/tomst/Downloads/thomastetris_indiv/thomastetris_indiv/yellow.png</key>
+            <key type="filename">../../../../Users/tomst/Downloads/thomastetrisindiv_3/thomastetrisindiv_3/black1.png</key>
+            <key type="filename">../../../../Users/tomst/Downloads/thomastetrisindiv_3/thomastetrisindiv_3/black2.png</key>
+            <key type="filename">../../../../Users/tomst/Downloads/thomastetrisindiv_3/thomastetrisindiv_3/black3.png</key>
+            <key type="filename">../../../../Users/tomst/Downloads/thomastetrisindiv_3/thomastetrisindiv_3/cyan.png</key>
+            <key type="filename">../../../../Users/tomst/Downloads/thomastetrisindiv_3/thomastetrisindiv_3/green.png</key>
+            <key type="filename">../../../../Users/tomst/Downloads/thomastetrisindiv_3/thomastetrisindiv_3/invis.png</key>
+            <key type="filename">../../../../Users/tomst/Downloads/thomastetrisindiv_3/thomastetrisindiv_3/orange.png</key>
+            <key type="filename">../../../../Users/tomst/Downloads/thomastetrisindiv_3/thomastetrisindiv_3/pink.png</key>
+            <key type="filename">../../../../Users/tomst/Downloads/thomastetrisindiv_3/thomastetrisindiv_3/purple.png</key>
+            <key type="filename">../../../../Users/tomst/Downloads/thomastetrisindiv_3/thomastetrisindiv_3/red.png</key>
+            <key type="filename">../../../../Users/tomst/Downloads/thomastetrisindiv_3/thomastetrisindiv_3/yellow.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -212,7 +213,7 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>../../../../Users/tomst/Downloads/thomastetris_indiv/thomastetris_indiv</filename>
+            <filename>../../../../Users/tomst/Downloads/thomastetrisindiv_3/thomastetrisindiv_3</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

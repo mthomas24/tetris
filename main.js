@@ -34,7 +34,7 @@ class Game {
     this.currentPiece = new Piece(this.queue.shift(), this.board);
     console.log(this.currentPiece)
     this.dropInterval = 600;
-    // this.lockDelay = 1000;
+    this.lockDelay = 1000;
     this.hold = null;
     this.canHold = true;
 
@@ -143,8 +143,8 @@ class Game {
   }
 
   pieceFall(fromGravity = true) {
-    if (fromGravity && this.softDropKeyDown) return;
     if (!fromGravity && !this.softDropKeyDown) return;
+    if (fromGravity && this.softDropKeyDown) return;
 
     if (!fromGravity) {
     }
@@ -154,11 +154,22 @@ class Game {
       this.currentPiece.pos.y--;
       // setTimeout(() => this.pieceFall(), this.dropInterval);
     } else {
-      // setTimeout(() => {
-      this.currentPiece.place(this.board);
-      this.startNextPiece();
-      // }, lockDelay);
+      setTimeout(() => {
+        if (!isIntersecting(this.board, this.currentPiece.grid, this.currentPiece.pos.shifted(0, -1)))
+          return;
+        this.currentPiece.place(this.board);
+        this.clearRows();
+        this.startNextPiece();
+      }, this.lockDelay);
     }
+  }
+
+  clearRows() {
+    this.board = this.board.filter(r => !r.every(c => c));
+    while (this.board.length < BOARD_HEIGHT) {
+      this.board.unshift(new Array(BOARD_WIDTH).fill(""));
+    }
+    // console.log(this.board);
   }
 
   start() {
@@ -198,6 +209,7 @@ class Game {
         case " ": {
           this.currentPiece.pos.y = this.currentPiece.getHardDropYPos();
           this.currentPiece.place(this.board);
+          this.clearRows();
           this.startNextPiece();
           break;
         }

@@ -47,4 +47,4 @@ export const ROOF = 4;
 
 export const PREVIEW_COUNT = 5;
 
-export const SOFT_DROP_INTERVAL = 50;
+export const SOFT_DROP_INTERVAL = 20;
